@@ -2,25 +2,26 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Brendan's Wicked Chat Application</title>
+	<title>BRENDAN CHAT 9000</title>
+	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet"> 
 	<link rel="stylesheet" href="css/main.css">
 	<script src="https://unpkg.com/vue"></script> 
 </head>
 <body>
 	<main id="app">		
 		<section class="form-container">
-			<label for="nickname">Your Nickname (optional)</label>
+			<label for="nickname">// HACKER HANDLE</label>
 			<input v-model="nickname" type="text" id="nickname" class="nickname" placeholder="What is your nickname?">
 			
 			<form>
-				<label for="message">Something to say?</label>
+				<label for="message">// MESSAGE TO THE CHATVERSE</label>
 				<textarea v-model="message" class="message" type="text" autocomplete="off" id="textarea"></textarea>
-				<input type="submit" @click.prevent="dispatchMessage">
+				<input type="submit" @click.prevent="dispatchMessage" value="// SEND MSG">
 			</form>
 		</section>
 		
-		<section class="messages" v-for="message in messages">
-			<ul id="messages">
+		<section class="messages">
+			<ul id="messages" v-for="message in messages">
 				<newmessage :msg="message"></newmessage>
 			</ul>
 		</section>		
