@@ -1,2 +1,135 @@
-*{margin:0;padding:0;box-sizing:border-box}html,body{height:100%}body{font:16px Helvetica, Arial}main{display:flex;height:100%;flex-direction:row}.form-container,.messages{padding:20px}.form-container{flex:1;border:6px solid #bfcfd6;background-color:#e3edf1}.form-container label{display:block;margin-bottom:0.5rem}.messages{flex:2;background-color:#eee;border:6px solid #e2e0e0}input,textarea{display:block;width:100%;border:2px solid #bfcfd6;border-radius:4px;font-size:0.8rem;padding:0.4rem;border-style:solid}textarea{height:135px}form{padding:3px;margin:12px auto}form input[type=submit]{width:auto;padding:10px;background-color:#4bc811;margin-top:1rem;border-radius:8px;color:white;cursor:pointer;text-transform:uppercase;font-weight:bold}#messages{list-style-type:none;margin:0;padding:0}#messages li{padding:5px 10px}#messages li:nth-child(odd){background:#eee}.new-message{width:45%;padding:8px 12px;background-color:white;border-radius:8px;margin-bottom:1rem;float:left;clear:both}.new-message span{font-size:0.8rem;display:block;margin-bottom:2px}.my-message{float:right !important;background-color:#86bf9d;color:white}
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: 1.2em;
+  font-family: "VT323", monospace;
+}
+
+main {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+}
+
+.form-container, .messages {
+  padding: 20px;
+}
+
+.form-container {
+  flex: 1;
+  border-right: 6px solid #65f442;
+  background-color: black;
+}
+.form-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #65f442;
+}
+
+.messages {
+  flex: 2;
+  background-color: black;
+  border: 6px solid black;
+}
+
+input, textarea {
+  font-family: "VT323", monospace;
+  display: block;
+  width: 100%;
+  border: 2px solid #65f442;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  padding: 0.4rem;
+  border-style: solid;
+  color: #65f442;
+  background-color: black;
+}
+
+textarea {
+  height: 65vh;
+}
+
+form {
+  padding: 3px;
+  margin: 12px auto;
+}
+form input[type=submit] {
+  font-family: "VT323", monospace;
+  width: auto;
+  padding: 10px;
+  background-color: black;
+  margin-top: 1rem;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #65f442;
+  font-size: 1em;
+}
+
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#messages li {
+  padding: 5px 10px;
+}
+#messages li:nth-child(odd) {
+  background: #eee;
+}
+
+.new-message {
+  width: 45%;
+  padding: 8px 12px;
+  background-color: black;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 3px solid white;
+  color: #65f442;
+  float: left;
+  clear: both;
+  font-size: 1.3em;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+.new-message span {
+  font-size: 0.8rem;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.my-message {
+  float: right !important;
+  background-color: black;
+  color: #65f442;
+  border: 5px solid white;
+  font-size: 1.3em;
+  animation: fadeIn 0.2s linear forwards;
+}
+
+.time {
+  font-size: 0.9em;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

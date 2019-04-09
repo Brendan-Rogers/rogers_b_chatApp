@@ -29,6 +29,8 @@ io.on('connection', function(socket) {
 	});
 
 	socket.on('disconnect', function() {
+		socket.emit('disconnect')
 		console.log('a user has disconnect');
+
 	});
 });
