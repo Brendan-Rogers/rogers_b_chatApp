@@ -28,7 +28,7 @@ const vm =  new Vue({
 			// only send message if there's a message to send
 			if (this.message) {
 				var date = new Date();
-				socket.emit('chat message', { content: this.message, name: this.nickname, time: date});
+				socket.emit('chat message', { content: this.message, name: this.nickname || 'ANONYMOUS', time: date});
 			}
 			// reset the message field
 			this.message = "";
