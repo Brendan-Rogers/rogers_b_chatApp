@@ -93,13 +93,18 @@ form input[type=submit] {
   width: 45%;
   padding: 8px 12px;
   background-color: black;
-  border-radius: 8px;
   margin-bottom: 1rem;
-  border: 3px solid white;
+  border: 5px solid white;
   color: #65f442;
   float: left;
   clear: both;
   font-size: 1.3em;
+  -webkit-border-radius: 10px;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius: 10px;
+  -moz-border-radius-bottomleft: 0;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
   animation: fadeIn 1s ease-in-out forwards;
 }
 .new-message span {
@@ -112,8 +117,14 @@ form input[type=submit] {
   float: right !important;
   background-color: black;
   color: #65f442;
-  border: 5px solid white;
   font-size: 1.3em;
+  -webkit-border-radius: 10px;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-radius: 10px;
+  -moz-border-radius-bottomright: 0;
+  border-radius: 10px;
+  border-bottom-right-radius: 0;
+  border: 5px solid white;
   animation: fadeIn 0.2s linear forwards;
 }
 
@@ -125,10 +136,12 @@ form input[type=submit] {
   0% {
     opacity: 0;
     filter: blur(10px);
+    border: 5px solid white;
   }
   100% {
     opacity: 1;
     filter: blur(0px);
+    border: 5px solid #65f442;
   }
 }
 
